@@ -147,7 +147,7 @@ public:
         temp->next->prev = temp->prev;
         free(temp);
         return;
-    }
+    };
 };
 
 int main()
