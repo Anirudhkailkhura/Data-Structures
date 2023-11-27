@@ -1,0 +1,81 @@
+Types of Array Problems:
+1 Searching:
+Linear Search: Iterate through the array to find a specific element.
+Binary Search: Applicable for sorted arrays, divide and conquer to find the target element.
+
+2 Sorting:
+
+Selection Sort, Bubble Sort, Insertion Sort: Basic sorting algorithms.
+Merge Sort, Quick Sort: More advanced sorting algorithms.
+
+3 Prefix Sum:
+
+Maintain an auxiliary array to store the cumulative sum up to each index. Useful for range queries.
+4 Two Pointers:
+
+Use two pointers to traverse the array simultaneously.
+Useful for problems involving searching, or finding a pair with a specific sum.
+
+5 Sliding Window:
+
+Maintain a window of elements and slide it through the array.
+Useful for problems involving subarrays or subsequences.
+
+6 Divide and Conquer:
+
+Break the problem into smaller subproblems, solve them, and combine the results.
+Useful for searching and sorting in some cases.
+
+7 Frequency Counting:
+
+Count the frequency of elements in the array.
+Useful for finding duplicates or analyzing the distribution of elements.
+
+8 Merging Arrays:
+
+Combine two or more arrays while maintaining a specific order.
+Useful in merging sorted arrays or handling multiple sources of data.
+
+9 Kadane's Algorithm:
+
+Find the maximum subarray sum.
+Useful for problems related to subarrays.
+
+10 Cycle Detection:
+
+Detect cycles in arrays or linked lists.
+Useful in problems related to graphs or repeated patterns.
+
+
+
+Tricks for Solving Array Problems:
+
+1 Use Extra Space:
+Sometimes using additional data structures like hash maps or sets can simplify the problem.
+
+2 Cumulative Sum:
+For problems involving subarray sums or averages, consider using cumulative sum arrays.
+
+3 Bit Manipulation:
+Use bitwise operations for specific tasks, such as finding the single non-repeating element.
+
+4Sorting:
+Sort the array to simplify certain problems or identify patterns.
+
+5 Prefix XOR:
+Use XOR of elements up to a certain index for solving specific problems.
+
+6 Precomputation:
+Precompute values or arrays to optimize certain operations.
+
+7 Handling Zeros and Negatives:
+Consider the impact of zeros and negative numbers on your algorithm.
+
+8 Dynamic Programming:
+Utilize dynamic programming techniques for problems with optimal substructure and overlapping subproblems.
+
+9 Observations and Patterns:
+Make observations about the input array to simplify or optimize the solution.
+
+10 Optimizing Time and Space Complexity:
+Analyze the time and space complexity of your solution and look for ways to optimize.
