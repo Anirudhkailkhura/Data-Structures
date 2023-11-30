@@ -1,31 +1,22 @@
 #include <iostream>
-using namespace std;
 
-// this function fac() will return us the factorial of the number n
-int fac(int n)
-{
-    // base condition
-    if (n == 0)
+// Recursive function to calculate factorial
+int factorial(int n) {
+    // Base case: factorial of 0 is 1
+    if (n == 0 || n == 1) {
         return 1;
-        
-    // recursion call
-    return n * fac(n - 1); 
-}
-int main()
-{
-    // Write your code here
-    int n;
-    cin >> n;
-    if (n < 0)
-        cout << "Error";
-    else
-    {
-        cout << fac(n);
+    } else {
+        // Recursive case: n! = n * (n-1)!
+        return n * factorial(n - 1);
     }
+}
+
+int main() {
+    // Example: Calculate factorial of 5
+    int result = factorial(5);
+
+    // Output the result
+    std::cout << "Factorial of 5 is: " << result << std::endl;
+
     return 0;
 }
-
-/*
-    time complexity : O(n)
-    space complexity : O(n)
-*/
