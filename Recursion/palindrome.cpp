@@ -34,8 +34,7 @@ bool isPalindrome(char str[])
 {
 	int n = strlen(str);
 	
-	// An empty string is 
-	// considered as palindrome
+	
 	if (n == 0)
 		return true;
 	
