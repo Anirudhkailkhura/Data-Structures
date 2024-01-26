@@ -11,6 +11,7 @@ Merge Sort, Quick Sort: More advanced sorting algorithms.
 3 Prefix Sum:
 
 Maintain an auxiliary array to store the cumulative sum up to each index. Useful for range queries.
+
 4 Two Pointers:
 
 Use two pointers to traverse the array simultaneously.
