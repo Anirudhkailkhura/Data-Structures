@@ -1,29 +1,39 @@
-//Count Maximum Consecutive One’s in the array
-
-#include <bits/stdc++.h>
-
+// C++ program to count maximum consecutive
+// 1's in a binary array.
+#include<bits/stdc++.h>
 using namespace std;
 
-    int findMaxConsecutiveOnes(vector < int > & nums) {
-      int cnt = 0;
-      int maxi = 0;
-      for (int i = 0; i < nums.size(); i++) {
-        if (nums[i] == 1) {
-          cnt++;
-        } else {
-          cnt = 0;
-        }
+// Function to get the maximum length of consecutive 1s in a binary array
+int getMaxLength(bool arr[], int n)
+{
+    int count = 0; // Initialize count to 0
+    int result = 0; // Initialize the maximum length of consecutive 1s to 0
 
-        maxi = max(maxi, cnt);
-      }
-      return maxi;
+    // Loop through the array elements
+    for (int i = 0; i < n; i++)
+    {
+        // Reset count to 0 when 0 is found
+        if (arr[i] == 0)
+            count = 0;
+        else
+        {
+            count++; // Increase count for consecutive 1s
+            result = max(result, count); // Update result if count becomes more
+        }
     }
 
+    return result; // Return the maximum length of consecutive 1s
+}
 
-int main() {
-  vector < int > nums = { 1, 1, 0, 1, 1, 1 };
+// Driver code
+int main()
+{
+   
+    bool arr[] = {1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1};
+    int n = sizeof(arr)/sizeof(arr[0]);
 
-  int ans = findMaxConsecutiveOnes(nums);
-  cout << "The maximum  consecutive 1's are " << ans;
- return 0;
+    // Print the result of the function
+    cout << "Maximum length of consecutive 1s: " << getMaxLength(arr, n) << endl;
+
+    return 0;
 }
